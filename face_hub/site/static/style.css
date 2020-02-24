@@ -1,0 +1,58 @@
+
+
+body {
+    background: url('photomontage.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.container {
+    /*background: url('cream.jpg') no-repeat; */
+    background-color: rgba(105, 105, 105, 0.75);
+    color: #ffffff;
+}
+
+
+.card {
+    margin-top: 10%;
+    text-align: center;
+    align-content: center;
+}
+
+.nav-item {
+    margin: 10px;
+}
+
+.nav-link {
+    padding: 10px;
+    color: rgba(225, 100, 60);
+    font-size: larger;
+}
+
+.navbar-brand {
+    padding: 10px;
+    color: rgba(225, 100, 60);
+    font-size: larger;
+}
+
+.form1 {
+    display: flex;
+    max-height: 60%;
+    min-height: 30%;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: #000000;
+}
+
+#features {
+    font-size: xx-large;
+    color: #ffffff;
+}
+
+.portrait {
+    align-content: center;
+}

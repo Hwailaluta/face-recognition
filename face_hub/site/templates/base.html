@@ -1,0 +1,29 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Face Recognition{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet"
+      href="{{url_for('.static', filename='style.css')}}">
+{% endblock %}
+
+{% block content %}
+  <!-- Page Content -->
+  <div class="container">
+    <div class="card border-0 shadow my-5">
+      <div class="card-body p-5">
+        <h1 class="font-weight-light">Facial Recognition</h1>
+        <p class="lead">Get a prediction from a neural network <br> and see what features it recognizes.</p>
+        <p class="lead"></p>
+        <p class = "form1"></p>
+        <form action = '/predict' method = 'POST' enctype="multipart/form-data" class="form1">
+            <input type = 'file' name = 'Portrait' accept="image/*">
+            <input type = 'submit' value = 'Submit'>
+        </form>
+        <div style="height: 700px"></div>
+        <p class="lead mb-0"></p>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
